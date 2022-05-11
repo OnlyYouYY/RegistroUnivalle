@@ -7,91 +7,111 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/etNombre"
+        android:id="@+id/etCodigoP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="68dp"
         android:ems="10"
-        android:hint="@string/hint_nombre"
+        android:hint="Codigo Producto:"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/etApellido"
+        android:id="@+id/etCategoriaP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
-        android:hint="@string/hint_apellido"
+        android:hint="Categoria:"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="@+id/etNombre"
+        app:layout_constraintEnd_toEndOf="@+id/etCodigoP"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/etNombre"
-        app:layout_constraintTop_toBottomOf="@+id/etNombre" />
+        app:layout_constraintStart_toStartOf="@+id/etCodigoP"
+        app:layout_constraintTop_toBottomOf="@+id/etCodigoP" />
 
     <EditText
-        android:id="@+id/etEmail"
+        android:id="@+id/etCantidadP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
-        android:hint="@string/hint_email"
-        android:inputType="textEmailAddress"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="@+id/etApellido"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/etApellido"
-        app:layout_constraintTop_toBottomOf="@+id/etApellido" />
-
-    <EditText
-        android:id="@+id/etCelular"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:ems="10"
-        android:hint="@string/hint_celular"
+        android:hint="Cantidad:"
         android:inputType="phone"
         android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="@+id/etEmail"
+        app:layout_constraintEnd_toEndOf="@+id/etNombreP"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/etEmail"
-        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+        app:layout_constraintStart_toStartOf="@+id/etNombreP"
+        app:layout_constraintTop_toBottomOf="@+id/etNombreP" />
 
     <EditText
-        android:id="@+id/etCodigoEstudiante"
+        android:id="@+id/etNombreP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
-        android:hint="@string/hint_codigo"
-        android:inputType="number"
+        android:hint="Nombre Producto:"
+        android:inputType="textEmailAddress"
         android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/swEstudiante" />
+        app:layout_constraintEnd_toEndOf="@+id/etCategoriaP"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etCategoriaP"
+        app:layout_constraintTop_toBottomOf="@+id/etCategoriaP" />
 
-    <Switch
-        android:id="@+id/swEstudiante"
+    <EditText
+        android:id="@+id/etTipoCambioP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Moneda o Billete:"
+        android:inputType="textEmailAddress"
         android:minHeight="48dp"
-        android:text="@string/sw_estudiante"
-        app:layout_constraintEnd_toEndOf="@+id/etCelular"
-        app:layout_constraintTop_toBottomOf="@+id/etCelular" />
+        app:layout_constraintEnd_toEndOf="@+id/etPrecioP"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etPrecioP"
+        app:layout_constraintTop_toBottomOf="@+id/etPrecioP" />
+
+    <EditText
+        android:id="@+id/etEstadoP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Estado:"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/etTipoCambioP"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etTipoCambioP"
+        app:layout_constraintTop_toBottomOf="@+id/etTipoCambioP" />
+
+    <EditText
+        android:id="@+id/etPrecioP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Precio:"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/etCantidadP"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etCantidadP"
+        app:layout_constraintTop_toBottomOf="@+id/etCantidadP" />
 
     <Button
         android:id="@+id/btnRegistrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="28dp"
         android:text="@string/btn_registrar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etCodigoEstudiante" />
+        app:layout_constraintTop_toBottomOf="@+id/etEstadoP" />
 </androidx.constraintlayout.widget.ConstraintLayout>
